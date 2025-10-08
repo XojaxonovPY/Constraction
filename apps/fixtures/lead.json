@@ -1,0 +1,147 @@
+[
+  {
+    "model": "apps.lead",
+    "pk": 1,
+    "fields": {
+      "name": "Ali Valiyev",
+      "phone": "+998901112233",
+      "social": "@ali_valiyev",
+      "message": "Menga issiqxona kerak.",
+      "source": "hero",
+      "utm_json": {
+        "utm_source": "google",
+        "utm_campaign": "spring_sale"
+      },
+      "status": "new",
+      "taken_by_tg_user_id": "tg_user_1001",
+      "telegram_chat_id": "chat_2001",
+      "telegram_message_id": "msg_3001",
+      "created_at": "2025-10-08T11:21:31.873Z",
+      "updated_at": "2025-10-08T11:21:31.873Z"
+    }
+  },
+  {
+    "model": "apps.lead",
+    "pk": 2,
+    "fields": {
+      "name": "Dilnoza Karimova",
+      "phone": "+998935553355",
+      "social": "@dilnoza_k",
+      "message": "Narxlar haqida ma�lumot kerak edi.",
+      "source": "contact",
+      "utm_json": {
+        "utm_source": "instagram"
+      },
+      "status": "in progress",
+      "taken_by_tg_user_id": "tg_user_1002",
+      "telegram_chat_id": "chat_2002",
+      "telegram_message_id": "msg_3002",
+      "created_at": "2025-10-08T11:21:31.912Z",
+      "updated_at": "2025-10-08T11:21:31.912Z"
+    }
+  },
+  {
+    "model": "apps.lead",
+    "pk": 3,
+    "fields": {
+      "name": "Otabek Shodmonov",
+      "phone": "+998901234555",
+      "social": "@otabek_s",
+      "message": "Kalkulyator orqali hisoblashni so�rayman.",
+      "source": "calculator",
+      "utm_json": {
+        "utm_source": "facebook"
+      },
+      "status": "done",
+      "taken_by_tg_user_id": "tg_user_1003",
+      "telegram_chat_id": "chat_2003",
+      "telegram_message_id": "msg_3003",
+      "created_at": "2025-10-08T11:21:31.962Z",
+      "updated_at": "2025-10-08T11:21:31.962Z"
+    }
+  },
+  {
+    "model": "apps.lead",
+    "pk": 4,
+    "fields": {
+      "name": "����",
+      "phone": "+48 600 000 000",
+      "social": "",
+      "message": "����� ����� ����� 18x60",
+      "source": "calculator",
+      "utm_json": {
+        "source": "google",
+        "campaign": "brand"
+      },
+      "status": "new",
+      "taken_by_tg_user_id": "",
+      "telegram_chat_id": "",
+      "telegram_message_id": "",
+      "created_at": "2025-10-08T13:20:02.592Z",
+      "updated_at": "2025-10-08T13:20:02.592Z"
+    }
+  },
+  {
+    "model": "apps.lead",
+    "pk": 5,
+    "fields": {
+      "name": "����",
+      "phone": "+48 600 000 000",
+      "social": "",
+      "message": "����� ����� ����� 18x60",
+      "source": "calculator",
+      "utm_json": {
+        "source": "google",
+        "campaign": "brand"
+      },
+      "status": "new",
+      "taken_by_tg_user_id": "",
+      "telegram_chat_id": "",
+      "telegram_message_id": "",
+      "created_at": "2025-10-08T13:21:05.494Z",
+      "updated_at": "2025-10-08T13:21:05.494Z"
+    }
+  },
+  {
+    "model": "apps.lead",
+    "pk": 6,
+    "fields": {
+      "name": "����",
+      "phone": "+48 600 000 000",
+      "social": "",
+      "message": "����� ����� ����� 18x60",
+      "source": "calculator",
+      "utm_json": {
+        "source": "google",
+        "campaign": "brand"
+      },
+      "status": "new",
+      "taken_by_tg_user_id": "",
+      "telegram_chat_id": "",
+      "telegram_message_id": "",
+      "created_at": "2025-10-08T13:22:04.408Z",
+      "updated_at": "2025-10-08T13:22:04.408Z"
+    }
+  },
+  {
+    "model": "apps.lead",
+    "pk": 7,
+    "fields": {
+      "name": "����",
+      "phone": "+48 600 000 000",
+      "social": "",
+      "message": "����� ����� ����� 18x60",
+      "source": "calculator",
+      "utm_json": {
+        "source": "google",
+        "campaign": "brand"
+      },
+      "status": "new",
+      "taken_by_tg_user_id": "",
+      "telegram_chat_id": "",
+      "telegram_message_id": "",
+      "created_at": "2025-10-08T13:23:21.487Z",
+      "updated_at": "2025-10-08T13:23:21.487Z"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "model": "apps.certificate",
+    "pk": 1,
+    "fields": {
+      "title": {
+        "ru": "���������� ISO 9001",
+        "uz": "ISO 9001 Sertifikati"
+      },
+      "file_url": "https://example.com/cert1.pdf",
+      "order": 1,
+      "is_published": true
+    }
+  },
+  {
+    "model": "apps.certificate",
+    "pk": 2,
+    "fields": {
+      "title": {
+        "ru": "������������� ����������",
+        "uz": "Ekologik sertifikat"
+      },
+      "file_url": "https://example.com/cert2.pdf",
+      "order": 2,
+      "is_published": true
+    }
+  },
+  {
+    "model": "apps.certificate",
+    "pk": 3,
+    "fields": {
+      "title": {
+        "ru": "���������� ��������",
+        "uz": "Sifat sertifikati"
+      },
+      "file_url": "https://example.com/cert3.pdf",
+      "order": 3,
+      "is_published": false
+    }
+  }
+]

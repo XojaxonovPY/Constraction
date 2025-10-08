@@ -1,0 +1,104 @@
+[
+  {
+    "model": "apps.project",
+    "pk": 1,
+    "fields": {
+      "slug": "project-cold-001",
+      "title": {
+        "ru": "�������� ������",
+        "uz": "Sovuq loyiha"
+      },
+      "region": "Tashkent",
+      "cover_image": "https://example.com/image1.jpg",
+      "gallery": [
+        "https://example.com/img1.jpg",
+        "https://example.com/img2.jpg"
+      ],
+      "type": "cold",
+      "params": {
+        "size": "100m2",
+        "material": "metal"
+      },
+      "problems": {
+        "problem": "Issiqlik yo�q"
+      },
+      "solution": {
+        "solution": "Issiqlik tizimi o�rnatildi"
+      },
+      "result": {
+        "result": "Harorat 22�C"
+      },
+      "commissioned_at": "2025-05-10",
+      "is_published": true,
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
+  },
+  {
+    "model": "apps.project",
+    "pk": 2,
+    "fields": {
+      "slug": "project-warm-002",
+      "title": {
+        "ru": "������ ������",
+        "uz": "Issiq loyiha"
+      },
+      "region": "Samarkand",
+      "cover_image": "https://example.com/image2.jpg",
+      "gallery": [
+        "https://example.com/a.jpg",
+        "https://example.com/b.jpg"
+      ],
+      "type": "warm",
+      "params": {
+        "area": "150m2"
+      },
+      "problems": {
+        "problem": "Sovuq"
+      },
+      "solution": {
+        "solution": "Isitish tizimi"
+      },
+      "result": {
+        "result": "Harorat +25�C"
+      },
+      "commissioned_at": "2025-06-15",
+      "is_published": true,
+      "created_at": "2025-10-08T11:21:30.970Z",
+      "updated_at": "2025-10-08T11:21:30.970Z"
+    }
+  },
+  {
+    "model": "apps.project",
+    "pk": 3,
+    "fields": {
+      "slug": "project-poly-003",
+      "title": {
+        "ru": "������������ ������",
+        "uz": "Polikarbonat loyiha"
+      },
+      "region": "Bukhara",
+      "cover_image": "https://example.com/image3.jpg",
+      "gallery": [
+        "https://example.com/c.jpg"
+      ],
+      "type": "polycarbonate",
+      "params": {
+        "material": "polycarbonate"
+      },
+      "problems": {
+        "problem": "Yorug�lik kam"
+      },
+      "solution": {
+        "solution": "Shaffof tom"
+      },
+      "result": {
+        "result": "Yorug�lik yaxshilandi"
+      },
+      "commissioned_at": "2025-04-01",
+      "is_published": false,
+      "created_at": "2025-10-08T11:21:31.036Z",
+      "updated_at": "2025-10-08T11:21:31.036Z"
+    }
+  }
+]

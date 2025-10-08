@@ -15,3 +15,17 @@ def admin(c):
 @task
 def apps(c):
     c.run("python manage.py startapp apps")
+
+
+
+
+@task
+def load(c):
+    c.run(
+        "python manage.py loaddata user.json settings.json faq.json certificate.json lead.json articles.json project.json product.json"
+    )
+
+
+@task
+def dump(c):
+    c.run("python manage.py dumpdata auth.user > user.json")

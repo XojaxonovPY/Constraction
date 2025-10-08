@@ -1,0 +1,64 @@
+[
+  {
+    "model": "apps.article",
+    "pk": 1,
+    "fields": {
+      "slug": "article-greenhouse-1",
+      "title": {
+        "ru": "� ��������",
+        "uz": "Issiqxona haqida"
+      },
+      "body": "Issiqxona qurilishi va afzalliklari haqida maqola.",
+      "tags": [
+        "issiqxona",
+        "qurilish",
+        "bog�dorchilik"
+      ],
+      "cover_image": "https://example.com/article1.jpg",
+      "published_at": "2025-04-15",
+      "is_published": true,
+      "created_at": "2025-10-08T11:21:31.296Z",
+      "updated_at": "2025-10-08T11:21:31.296Z"
+    }
+  },
+  {
+    "model": "apps.article",
+    "pk": 2,
+    "fields": {
+      "slug": "article-tips-2",
+      "title": {
+        "uz": "Qurilish bo�yicha maslahatlar"
+      },
+      "body": "Yangi boshlovchilar uchun maslahatlar to�plami.",
+      "tags": [
+        "maslahat",
+        "qurilish"
+      ],
+      "cover_image": "https://example.com/article2.jpg",
+      "published_at": "2025-03-10",
+      "is_published": true,
+      "created_at": "2025-10-08T11:21:31.371Z",
+      "updated_at": "2025-10-08T11:21:31.371Z"
+    }
+  },
+  {
+    "model": "apps.article",
+    "pk": 3,
+    "fields": {
+      "slug": "article-materials-3",
+      "title": {
+        "uz": "Materiallar turlari"
+      },
+      "body": "Polikarbonat, metall va boshqa materiallar haqida maqola.",
+      "tags": [
+        "material",
+        "polycarbonate"
+      ],
+      "cover_image": "https://example.com/article3.jpg",
+      "published_at": "2025-01-05",
+      "is_published": false,
+      "created_at": "2025-10-08T11:21:31.420Z",
+      "updated_at": "2025-10-08T11:21:31.420Z"
+    }
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "model": "apps.product",
+    "pk": 1,
+    "fields": {
+      "slug": "prod-cold-001",
+      "name": {
+        "ru": "�������� �������",
+        "uz": "Sovuq mahsulot"
+      },
+      "description": {
+        "ru": "��������",
+        "uz": "Bu sovuq turdagi mahsulot"
+      },
+      "features": {
+        "size": "M",
+        "color": "blue"
+      },
+      "image": "https://example.com/prod1.jpg",
+      "price_form": "250000.00",
+      "type": "cold",
+      "is_published": true,
+      "created_at": "2025-10-08T11:21:31.104Z",
+      "updated_at": "2025-10-08T11:21:31.104Z"
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 2,
+    "fields": {
+      "slug": "prod-warm-002",
+      "name": {
+        "ru": "������ �������",
+        "uz": "Issiq mahsulot"
+      },
+      "description": {
+        "uz": "Isitish uchun maxsus mahsulot"
+      },
+      "features": {
+        "power": "2kW"
+      },
+      "image": "https://example.com/prod2.jpg",
+      "price_form": "350000.00",
+      "type": "warm",
+      "is_published": true,
+      "created_at": "2025-10-08T11:21:31.182Z",
+      "updated_at": "2025-10-08T11:21:31.182Z"
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 3,
+    "fields": {
+      "slug": "prod-poly-003",
+      "name": {
+        "uz": "Polikarbonat mahsulot"
+      },
+      "description": {
+        "uz": "Polikarbonatdan tayyorlangan mahsulot"
+      },
+      "features": {
+        "material": "polycarbonate"
+      },
+      "image": "https://example.com/prod3.jpg",
+      "price_form": "500000.00",
+      "type": "polycarbonate",
+      "is_published": false,
+      "created_at": "2025-10-08T11:21:31.245Z",
+      "updated_at": "2025-10-08T11:21:31.245Z"
+    }
+  }
+]
