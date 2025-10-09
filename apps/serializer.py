@@ -1,49 +1,125 @@
-from rest_framework.fields import CharField, IntegerField, DictField, FloatField, BooleanField, ListField
-from rest_framework.serializers import ModelSerializer, Serializer
+from rest_framework.fields import CharField, IntegerField, FloatField, BooleanField, ListField
+from rest_framework.serializers import ModelSerializer, Serializer, SerializerMethodField
 
 from apps.models import Project, Product, Article, FAQ, Certificate, Settings, Lead
 
+from rest_framework import serializers
 
-class ProjectListModelSerializer(ModelSerializer):
+
+class I18NModelSerializer(serializers.ModelSerializer):
+    def get_i18n_value(self, value_dict):
+        request = self.context.get("request")
+        if not isinstance(value_dict, dict):
+            return value_dict
+        lang = getattr(request, "LANGUAGE_CODE", None)
+        if not lang:
+            if request and request.query_params.get("lang"):
+                lang = request.query_params.get("lang")
+            elif request and request.headers.get("Accept-Language"):
+                lang = request.headers.get("Accept-Language").split(",")[0].split("-")[0]
+        lang = lang or "uz"
+        return value_dict.get(lang, value_dict.get("uz") or value_dict.get("ru"))
+
+
+class ProjectListModelSerializer(I18NModelSerializer):
+    title = SerializerMethodField()
+
     class Meta:
         model = Project
         fields = ('id', 'slug', 'title', 'cover_image', 'params', 'region')
 
+    def get_title(self, obj):
+        return self.get_i18n_value(obj.title)
 
-class ProjectRetrieveModelSerializer(ModelSerializer):
+
+class ProjectRetrieveModelSerializer(I18NModelSerializer):
+    title = SerializerMethodField()
+    problems = SerializerMethodField()
+    solution = SerializerMethodField()
+    result = SerializerMethodField()
+
     class Meta:
         model = Project
-        fields = ('slug', 'title', 'gallery', 'params', 'problems', 'problems', 'solution', 'result', 'region')
+        fields = ('slug', 'title', 'gallery', 'params', 'problems', 'solution', 'result', 'region')
+
+    def get_title(self, obj):
+        return self.get_i18n_value(obj.title)
+
+    def get_problems(self, obj):
+        return self.get_i18n_value(obj.problems)
+
+    def get_solution(self, obj):
+        return self.get_i18n_value(obj.solution)
+
+    def get_result(self, obj):
+        return self.get_i18n_value(obj.result)
 
 
-class ProductModelSerializer(ModelSerializer):
+class ProductModelSerializer(I18NModelSerializer):
+    name = SerializerMethodField()
+    description = SerializerMethodField()
+    features = SerializerMethodField()
+
     class Meta:
         model = Product
-        fields = ('slug', 'name', 'price_form', 'features', 'image')
+        fields = ('slug', 'name', 'description', 'price_form', 'features', 'image')
+
+    def get_name(self, obj):
+        return self.get_i18n_value(obj.name)
+
+    def get_description(self, obj):
+        return self.get_i18n_value(obj.description)
+
+    def get_features(self, obj):
+        return self.get_i18n_value(obj.features)
 
 
-class ArticleListModelSerializer(ModelSerializer):
+class ArticleListModelSerializer(I18NModelSerializer):
+    title = SerializerMethodField()
+
     class Meta:
         model = Article
         fields = ('slug', 'title', 'cover_image', 'published_at')
 
+    def get_title(self, obj):
+        return self.get_i18n_value(obj.title)
 
-class ArticleRetrieveModelSerializer(ModelSerializer):
+
+class ArticleRetrieveModelSerializer(I18NModelSerializer):
+    title = SerializerMethodField()
+
     class Meta:
         model = Article
         fields = ('slug', 'title', 'body', 'tags', 'cover_image', 'published_at')
 
+    def get_title(self, obj):
+        return self.get_i18n_value(obj.title)
 
-class FAQModelSerializer(ModelSerializer):
+
+class FAQModelSerializer(I18NModelSerializer):
+    question = SerializerMethodField()
+    answer = SerializerMethodField()
+
     class Meta:
         model = FAQ
         fields = ('id', 'question', 'answer')
 
+    def get_question(self, obj):
+        return self.get_i18n_value(obj.question)
 
-class CertificateModelSerializer(ModelSerializer):
+    def get_answer(self, obj):
+        return self.get_i18n_value(obj.answer)
+
+
+class CertificateModelSerializer(I18NModelSerializer):
+    title = SerializerMethodField()
+
     class Meta:
         model = Certificate
         fields = ('id', 'title', 'file_url')
+
+    def get_title(self, obj):
+        return self.get_i18n_value(obj.title)
 
 
 class SettingModelSerializer(ModelSerializer):
