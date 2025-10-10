@@ -37,5 +37,41 @@
       "order": 3,
       "is_published": false
     }
+  },
+  {
+    "model": "apps.certificate",
+    "pk": 4,
+    "fields": {
+      "title": {
+        "ru": "Сертификат качества",
+        "uz": "Sifat sertifikati"
+      },
+      "file_url": "https://example.com/docs/certificate1.pdf",
+      "order": 1
+    }
+  },
+  {
+    "model": "apps.certificate",
+    "pk": 5,
+    "fields": {
+      "title": {
+        "ru": "Сертификат происхождения",
+        "uz": "Kelib chiqish sertifikati"
+      },
+      "file_url": "https://example.com/docs/certificate2.pdf",
+      "order": 2
+    }
+  },
+  {
+    "model": "apps.certificate",
+    "pk": 6,
+    "fields": {
+      "title": {
+        "ru": "Сертификат безопасности",
+        "uz": "Xavfsizlik sertifikati"
+      },
+      "file_url": "https://example.com/docs/certificate3.pdf",
+      "order": 3
+    }
   }
 ]

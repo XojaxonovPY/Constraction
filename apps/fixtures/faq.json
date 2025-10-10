@@ -46,5 +46,50 @@
       "order": 3,
       "is_published": false
     }
+  },
+  {
+    "model": "apps.faq",
+    "pk": 4,
+    "fields": {
+      "question": {
+        "ru": "Как ухаживать за теплицей?",
+        "uz": "Issiqxonani qanday parvarish qilish kerak?"
+      },
+      "answer": {
+        "ru": "Регулярно проверяйте вентиляцию.",
+        "uz": "Ventilyatsiyani muntazam tekshirib turing."
+      },
+      "order": 1
+    }
+  },
+  {
+    "model": "apps.faq",
+    "pk": 5,
+    "fields": {
+      "question": {
+        "ru": "Можно ли использовать пленку зимой?",
+        "uz": "Qishda plyonkadan foydalanish mumkinmi?"
+      },
+      "answer": {
+        "ru": "Да, если она имеет УФ-защиту.",
+        "uz": "Ha, agar u UV himoyasiga ega bo‘lsa."
+      },
+      "order": 2
+    }
+  },
+  {
+    "model": "apps.faq",
+    "pk": 6,
+    "fields": {
+      "question": {
+        "ru": "Сколько лет служит поликарбонат?",
+        "uz": "Polikarbonat necha yil xizmat qiladi?"
+      },
+      "answer": {
+        "ru": "До 10 лет при правильном уходе.",
+        "uz": "To‘g‘ri parvarishda 10 yilgacha xizmat qiladi."
+      },
+      "order": 3
+    }
   }
 ]

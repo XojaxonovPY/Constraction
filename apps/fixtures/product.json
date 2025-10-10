@@ -68,5 +68,77 @@
       "created_at": "2025-10-08T11:21:31.245Z",
       "updated_at": "2025-10-08T11:21:31.245Z"
     }
+  },
+  {
+    "model": "apps.product",
+    "pk": 4,
+    "fields": {
+      "slug": "polycarbonate-10mm",
+      "name": {
+        "ru": "Поликарбонат 10мм",
+        "uz": "Polikarbonat 10mm"
+      },
+      "description": {
+        "ru": "Прочный материал для теплиц",
+        "uz": "Issiqxonalar uchun mustahkam material"
+      },
+      "features": {
+        "ru": "УФ-защита, лёгкий, гибкий",
+        "uz": "UV himoya, yengil, moslashuvchan"
+      },
+      "image": "https://example.com/images/polycarbonate10.jpg",
+      "price_form": "150000.00",
+      "type": "polycarbonate",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 5,
+    "fields": {
+      "slug": "steel-frame",
+      "name": {
+        "ru": "Стальной каркас",
+        "uz": "Po‘lat karkas"
+      },
+      "description": {
+        "ru": "Основа теплицы из стали",
+        "uz": "Issiqxona uchun po‘latdan asos"
+      },
+      "features": {
+        "ru": "Прочный, не ржавеет",
+        "uz": "Mustahkam, zanglamaydi"
+      },
+      "image": "https://example.com/images/steel-frame.jpg",
+      "price_form": "350000.00",
+      "type": "warm",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
+  },
+  {
+    "model": "apps.product",
+    "pk": 6,
+    "fields": {
+      "slug": "uv-protection-film",
+      "name": {
+        "ru": "Пленка с УФ-защитой",
+        "uz": "UV himoyali plyonka"
+      },
+      "description": {
+        "ru": "Защищает растения от солнца",
+        "uz": "O‘simliklarni quyoshdan himoya qiladi"
+      },
+      "features": {
+        "ru": "Легкая установка, высокая прочность",
+        "uz": "Oson o‘rnatiladi, mustahkam"
+      },
+      "image": "https://example.com/images/uv-film.jpg",
+      "price_form": "90000.00",
+      "type": "cold",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
   }
 ]

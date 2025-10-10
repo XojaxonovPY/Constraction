@@ -60,5 +60,75 @@
       "created_at": "2025-10-08T11:21:31.420Z",
       "updated_at": "2025-10-08T11:21:31.420Z"
     }
+  },
+  {
+    "model": "apps.article",
+    "pk": 4,
+    "fields": {
+      "slug": "greenhouse-tips",
+      "title": {
+        "ru": "Советы по уходу за теплицей",
+        "uz": "Issiqxona parvarishi bo‘yicha maslahatlar"
+      },
+      "body": {
+        "ru": "Теплицу нужно проветривать каждый день...",
+        "uz": "Issiqxonani har kuni shamollatish kerak..."
+      },
+      "tags": [
+        "greenhouse",
+        "care",
+        "tips"
+      ],
+      "cover_image": "https://example.com/images/article1.jpg",
+      "published_at": "2024-07-01",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
+  },
+  {
+    "model": "apps.article",
+    "pk": 5,
+    "fields": {
+      "slug": "winter-greenhouse",
+      "title": {
+        "ru": "Как подготовить теплицу к зиме",
+        "uz": "Issiqxonani qishga qanday tayyorlash kerak"
+      },
+      "body": {
+        "ru": "Удалите старые растения и проверьте герметичность...",
+        "uz": "Eski o‘simliklarni olib tashlang va muhrlanishni tekshiring..."
+      },
+      "tags": [
+        "winter",
+        "greenhouse"
+      ],
+      "cover_image": "https://example.com/images/article2.jpg",
+      "published_at": "2024-08-10",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
+  },
+  {
+    "model": "apps.article",
+    "pk": 6,
+    "fields": {
+      "slug": "watering-system",
+      "title": {
+        "ru": "Автоматическая система полива",
+        "uz": "Avtomatik sug‘orish tizimi"
+      },
+      "body": {
+        "ru": "Использование капельного полива экономит воду...",
+        "uz": "Tomchilatib sug‘orish suvni tejaydi..."
+      },
+      "tags": [
+        "watering",
+        "automation"
+      ],
+      "cover_image": "https://example.com/images/article3.jpg",
+      "published_at": "2024-09-05",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
   }
 ]

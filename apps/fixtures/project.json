@@ -100,5 +100,113 @@
       "created_at": "2025-10-08T11:21:31.036Z",
       "updated_at": "2025-10-08T11:21:31.036Z"
     }
+  },
+  {
+    "model": "apps.project",
+    "pk": 4,
+    "fields": {
+      "slug": "greenhouse-tashkent",
+      "title": {
+        "ru": "Теплица в Ташкенте",
+        "uz": "Toshkentdagi issiqxona"
+      },
+      "region": "Tashkent",
+      "cover_image": "https://example.com/images/greenhouse1.jpg",
+      "gallery": [
+        "https://example.com/images/greenhouse1.jpg"
+      ],
+      "type": "polycarbonate",
+      "params": {
+        "ru": "Размер 6x20 м",
+        "uz": "O‘lchami 6x20 m"
+      },
+      "problems": {
+        "ru": "Плохая вентиляция",
+        "uz": "Ventilyatsiya yomon"
+      },
+      "solution": {
+        "ru": "Добавлены автоматические окна",
+        "uz": "Avtomatik oynalar o‘rnatildi"
+      },
+      "result": {
+        "ru": "Урожай увеличился на 40%",
+        "uz": "Hosil 40% ga oshdi"
+      },
+      "commissioned_at": "2024-05-10",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
+  },
+  {
+    "model": "apps.project",
+    "pk": 5,
+    "fields": {
+      "slug": "greenhouse-samarkand",
+      "title": {
+        "ru": "Теплица в Самарканде",
+        "uz": "Samarqanddagi issiqxona"
+      },
+      "region": "Samarkand",
+      "cover_image": "https://example.com/images/greenhouse2.jpg",
+      "gallery": [
+        "https://example.com/images/greenhouse2.jpg"
+      ],
+      "type": "cold",
+      "params": {
+        "ru": "Размер 8x15 м",
+        "uz": "O‘lchami 8x15 m"
+      },
+      "problems": {
+        "ru": "Недостаток освещения",
+        "uz": "Yorug‘lik yetarli emas"
+      },
+      "solution": {
+        "ru": "Установлены LED-лампы",
+        "uz": "LED chiroqlar o‘rnatildi"
+      },
+      "result": {
+        "ru": "Рост растений улучшился",
+        "uz": "O‘simlik o‘sishi yaxshilandi"
+      },
+      "commissioned_at": "2024-06-15",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
+  },
+  {
+    "model": "apps.project",
+    "pk": 6,
+    "fields": {
+      "slug": "greenhouse-andijan",
+      "title": {
+        "ru": "Теплица в Андижане",
+        "uz": "Andijondagi issiqxona"
+      },
+      "region": "Andijan",
+      "cover_image": "https://example.com/images/greenhouse3.jpg",
+      "gallery": [
+        "https://example.com/images/greenhouse3.jpg"
+      ],
+      "type": "warm",
+      "params": {
+        "ru": "Размер 10x30 м",
+        "uz": "O‘lchami 10x30 m"
+      },
+      "problems": {
+        "ru": "Старая конструкция",
+        "uz": "Eski konstruksiya"
+      },
+      "solution": {
+        "ru": "Полностью обновлена рама",
+        "uz": "Rama to‘liq yangilandi"
+      },
+      "result": {
+        "ru": "Срок службы увеличился",
+        "uz": "Xizmat muddati oshdi"
+      },
+      "commissioned_at": "2024-07-20",
+      "created_at": "2025-10-08T11:21:30.848Z",
+      "updated_at": "2025-10-08T11:21:30.848Z"
+    }
   }
 ]
