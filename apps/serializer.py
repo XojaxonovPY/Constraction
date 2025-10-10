@@ -1,8 +1,6 @@
 from rest_framework.fields import CharField, IntegerField, FloatField, BooleanField, ListField
 from rest_framework.serializers import ModelSerializer, Serializer, SerializerMethodField
-
 from apps.models import Project, Product, Article, FAQ, Certificate, Settings, Lead
-
 from rest_framework import serializers
 
 
@@ -87,6 +85,7 @@ class ArticleListModelSerializer(I18NModelSerializer):
 
 class ArticleRetrieveModelSerializer(I18NModelSerializer):
     title = SerializerMethodField()
+    body = SerializerMethodField()
 
     class Meta:
         model = Article
@@ -94,6 +93,9 @@ class ArticleRetrieveModelSerializer(I18NModelSerializer):
 
     def get_title(self, obj):
         return self.get_i18n_value(obj.title)
+
+    def get_body(self, obj):
+        return self.get_i18n_value(obj.body)
 
 
 class FAQModelSerializer(I18NModelSerializer):
@@ -122,10 +124,19 @@ class CertificateModelSerializer(I18NModelSerializer):
         return self.get_i18n_value(obj.title)
 
 
-class SettingModelSerializer(ModelSerializer):
+class SettingModelSerializer(I18NModelSerializer):
+    addresses = SerializerMethodField()
+    work_hours = SerializerMethodField()
+
     class Meta:
         model = Settings
         fields = ('phones', 'emails', 'messengers', 'addresses', 'work_hours', 'seo_defaults')
+
+    def get_addresses(self, obj):
+        return self.get_i18n_value(obj.addresses)
+
+    def get_work_hours(self, obj):
+        return self.get_i18n_value(obj.work_hours)
 
 
 class CladdingSerializer(Serializer):
